@@ -2,6 +2,8 @@ spb_price = 50_000
 msc_price = 80_000
 ekb_price = 40_000
 
+print("Приветствую в системе помощи туриста!")
+print("Доступные города: spb, msc, ekb")
 city = input("Введите город: ")
 count = int(input("Введите количество туристов: "))
 
