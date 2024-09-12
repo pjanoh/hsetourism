@@ -5,14 +5,15 @@ ekb_price = 40_000
 print("Приветствую в системе помощи туриста!")
 print("Доступные города: spb, msc, ekb")
 city = input("Введите город: ")
-count = int(input("Введите количество туристов: "))
+parents_count = int(input("Введите количество взрослых туристов: "))
+kids_count = int(input("Введите количество детей: "))
 
 if city == "spb":
-    total = spb_price * count
+    total = spb_price * parents_count + spb_price * kids_count / 2
 elif city == "msc":
-    total = msc_price * count
+    total = msc_price * parents_count + msc_price * kids_count / 2
 elif city == "ekb":
-    total = ekb_price * count
+    total = ekb_price * parents_count + ekb_price * kids_count / 2
 else:
     print("Такого города нет")
     exit()
